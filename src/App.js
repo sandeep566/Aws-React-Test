@@ -1,23 +1,26 @@
-import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './Home';
-import Employess from './Employess';
-import Pagenotfound from './Pagenotfound';
-import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./MyFiles/Home";
+import About from "./MyFiles/About";
+import Contact from "./MyFiles/Contact";
+import Nopage from "./MyFiles/Nopage";
+import Services from './MyFiles/Services';
+
 
 
 const App = () => {
   return (
-    <div class="container mt-5" style={{backgroundColor:"black"}}>
-    <BrowserRouter>
+   
+    <Router>
+      
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Employess" element={<Employess />} />
-        <Route path="*" element={<Pagenotfound />} />
-     </Routes>
-    </BrowserRouter>
-    </div>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/services" element={<Services/>}/>
+          <Route path="*" element={<Nopage/>} />
+      </Routes>
+  </Router>
   );
-}
+};
 
 export default App;

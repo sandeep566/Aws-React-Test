@@ -6,7 +6,6 @@ const Home = ()=>{
         <div>  
            
            <img src={Loader} alt={Loader} width={800}/>
-
         </div>
     )
 }
