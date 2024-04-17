@@ -1,5 +1,5 @@
 import React from "react";
-import Loader from "../src/logo.svg"
+import Loader from "../src/Amazon_icon.png";
 
 const Home = ()=>{
     return(
