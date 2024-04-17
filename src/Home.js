@@ -5,7 +5,7 @@ const Home = ()=>{
     return(
         <div>  
            
-           <img src={Loader} alt={Loader} width={100}/>
+           <img src={Loader} alt={Loader} width={800}/>
 
         </div>
     )
